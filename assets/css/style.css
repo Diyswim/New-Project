@@ -1,0 +1,340 @@
+
+@font-face {
+	font-family: 'segoeui';
+	font-style: normal;
+	font-weight: normal;
+	src: local('segoeui'), url('fonts/segoeui.woff') format('woff');
+}
+/*----------
+[ Body ]
+-------------*/
+body{
+	font-family: 'segoeui';
+	font-weight:400;
+}
+a:hover{
+	text-decoration:none;
+}
+a:focus{
+	outline:none;
+}
+.btn-link:hover, .btn-link:focus {
+    text-decoration: none;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+    outline: none ; 
+    outline-offset: none;
+	box-shadow:none;
+}
+.bootstrap-select .dropdown-toggle:focus {
+    outline: none ;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: none ;
+}
+.owl-wrapper-outer{
+	background:none ;
+	box-shadow:none ;
+	border:none ;
+	border-radius:0px ;
+}
+.owl-carousel, .owl-controls{
+	background:none ;
+	margin:0 ;
+}
+.paddleft{
+	padding-left:0px;
+}
+.padd0{
+	padding:0px;
+}
+.paddright{
+	padding-right:0;
+}
+.mar-b{
+	margin-bottom:80px;
+}
+.btn-primary{
+	background:transparent;
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:700;
+	font-size:16px;
+	border-radius:4px;
+	border:1px solid #fff; 
+	height:50px;
+}
+.btn-primary:hover, .btn-primary:active:hover, .btn-primary:focus{
+	background:#FFA41F;
+	border:1px solid #FFA41F; 
+}
+.des{
+	font-size:14px;
+	font-weight:400;
+	color:#999;
+	line-height:24px;
+}
+.bottom-top:hover .icofont{
+	color:#fff;
+}
+.bottom-top:hover {
+	transition-duration: 1s;
+    transition-timing-function: linear;
+}
+.bottom-top {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	border-radius:4px;
+	padding:8px;
+}
+.bottom-top .icofont{
+	font-size:20px;
+	color:#fff;
+}
+.bottom-top{
+	background:#FFA41F;
+}
+/*--------------------
+[ Header / header ]
+---------------------*/
+
+header{
+background: rgba(0, 0, 0, 0.45);
+position: absolute;
+left: 0;
+right: 0;
+z-index: 2;
+top: 0; 
+}
+.top{
+border-bottom:1px solid #63625E;
+}
+.top .icon, .top .social{
+margin:0;
+}
+.top .icon{
+padding:10px 0;
+}
+.top .icon li{
+line-height:14px;
+padding:0 22px 0 0;
+}
+.top .icon li i{
+margin-right:8px;
+}
+.top .icon li a, .top .social li a{
+color:#fff;
+font-size:13px;
+}
+.top .social li{
+padding:0 14px 0 0;
+line-height:14px;
+}
+.top .social li:last-child, .top .icon li:last-child {
+padding:0 0px 0 0;
+}
+.top .social li i, #form-language .icofont-caret-down{
+margin-right:0px;
+}
+.top .social li a:hover i{
+color:#FFA41F;
+}
+#form-language .btn-link {
+padding:0;
+color: #fff;
+font-size:13px; 
+line-height:14px;
+}
+.top .dropdown-menu > li{
+padding:0;
+}
+.top .dropdown-menu > li > a{
+border-right:0px solid #000;
+padding-right:0;
+color:#000;
+font-size:13px; 
+}
+.top .dropdown-menu > li > a:hover{
+background:#FFA41F;
+color:#fff;
+}
+header #logo{
+margin:15px 0;
+}
+#menu .navbar{
+margin:40px 0;
+min-height:0;
+border: 0px solid transparent;
+}
+#menu .nav > li{
+margin:0 34px 0 0;
+}
+#menu .nav > li:last-child{
+margin:0 0px 0 0;
+}
+#menu .nav > li > a{
+background-color: transparent;
+color: #fff;
+font-size: 14px;
+font-weight: 500;
+padding:0;
+line-height: 14px;
+text-transform:uppercase;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+position: relative;
+}
+#menu .nav > li > a:before {
+content: "";
+position: absolute;
+z-index: -1;
+left: 100%;
+right: 0;
+top: 20px;
+background: #FFA41F;
+height: 4px;
+-webkit-transition-property: left;
+transition-property: left;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+#menu .nav > li > a:hover:before,#menu .nav > li > a:focus:before,#menu .nav > li > a:active:before {
+left: 0;
+}
+#menu .nav > li > a:hover, #menu .navbar-nav > .active > a, #menu .navbar-nav > .active > a:hover, #menu .navbar-nav > .active > a:focus {
+color:#FFA41F;
+}
+#menu .dropdown-menu{
+padding:0;
+border-radius:0px;
+min-width:230px;
+margin:29px 0 0 0;
+}
+#menu .dropdown .dropdown-menu {
+-webkit-transition: all .5s ease-out;
+transition: all .5s ease-out;
+transform: rotateX(90deg);
+transform-origin: top;
+opacity: 0;
+display: block;
+}
+#menu .dropdown.open .dropdown-menu {
+opacity: 1;
+transform: rotateX(0deg);
+transform-origin: top;
+}
+#menu .dropdown-menu li{
+padding:15px;
+border-bottom:1px solid #ddd;
+}
+#menu .dropdown-menu li:last-child{
+border-bottom:none;
+}
+#menu .dropdown-menu li a{
+color:#000;
+font-size:14px;
+font-weight:400;
+text-transform:capitalize;
+}
+#menu .dropdown-menu li a:hover{
+color:#FFA41F;
+}
+.button-top .btn-primary{
+background:#FFA41F;
+margin:22px 0;
+padding:12px 0px;
+width:100%;
+border:1px solid #FFA41F;
+}
+
+
+.slide{
+  position:relative;
+}
+.slideshow img{
+  width:100%;
+}
+.slide-detail{
+  left: 0;
+  right:0;
+  position:absolute;
+  z-index:1;
+  top:auto;
+  bottom:7%;
+  text-align: center;
+  }
+.slide-detail img{
+  margin:0 auto;
+  width: 11.5%;
+}
+.slide-detail h4{
+  font-size:50px;
+  color:#fff;
+  font-weight:700;
+  margin:10px 0;
+  text-transform:uppercase;
+}
+.slide-detail p{
+  font-size: 16px;
+  color:#fff;
+  margin: 0 10% 25px;
+}
+.slide-detail .btn-primary{
+  width:190px;
+}
+.slide-detail .btn-primary + .btn-primary{
+  margin-left:20px;
+}
+.slideshow .owl-pagination{
+  top: auto;
+  bottom: 3px;
+  position:absolute;
+  right:0;
+  left:0;
+}
+.slideshow .owl-controls .owl-page{
+  margin:0;
+  padding:0 6px;
+  text-align: center;
+}
+.slideshow .owl-controls .owl-page span{
+  background:#fff;
+  border:3px solid transparent;
+  height:10px;
+  width:10px;
+  box-shadow: none;
+}
+.slideshow .owl-controls .owl-page.active span{
+  background:transparent;
+  border: 3px solid #fff;
+  width:12px;
+  height:12px;
+}
+.slide .owl-controls{
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.slide .owl-buttons .owl-prev{
+  left:60px;
+}
+.slideshow .owl-buttons .owl-next{
+  right:60px;
+}
+.slideshow .owl-buttons .owl-prev, .slideshow .owl-buttons .owl-next{
+  color:#fff;
+}
+.slideshow .owl-buttons .owl-prev i, .slideshow .owl-buttons .owl-next i{
+  font-size:60px;
+  margin:0;
+}
+.slideshow .owl-buttons div{
+  opacity: 1;
+}
+
+
+
+
